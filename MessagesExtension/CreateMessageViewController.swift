@@ -8,7 +8,25 @@
 
 import UIKit
 
+protocol CreateMessageViewControllerDelegate: class {
+    func createMessageViewControllerDidCreateMessage(text: String)
+}
+
 class CreateMessageViewController: UIViewController {
     
+    var message: String!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        secretMessageTextField.text = message
+    }
+    
+    @IBOutlet weak var secretMessageLabel: UILabel!
+    @IBOutlet weak var secretMessageTextField: UITextField!
+    
+    weak var delegate: CreateMessageViewControllerDelegate!
+    
+    @IBAction func createMessageButtonPressed() {
+        delegate.createMessageViewControllerDidCreateMessage(text: secretMessageTextField.text!)
+    }
 }

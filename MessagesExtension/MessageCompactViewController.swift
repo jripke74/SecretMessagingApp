@@ -8,8 +8,15 @@
 
 import UIKit
 
+protocol MessageCompactViewControllerDelegate: class {
+    func didShowCreateMessage()
+}
+
 class MessageCompactViewController: UIViewController {
-
     
-
+    weak var delegate: MessageCompactViewControllerDelegate!
+    
+    @IBAction func showCreateMessage() {
+        self.delegate.didShowCreateMessage()
+    }
 }

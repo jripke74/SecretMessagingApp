@@ -89,8 +89,8 @@
 		896DAE031F1801770005D34D /* SecretMessage */ = {
 			isa = PBXGroup;
 			children = (
-				896DAE041F1801770005D34D /* Assets.xcassets */,
 				896DAE061F1801770005D34D /* Info.plist */,
+				896DAE041F1801770005D34D /* Assets.xcassets */,
 			);
 			path = SecretMessage;
 			sourceTree = "<group>";
@@ -106,11 +106,11 @@
 		896DAE121F1801770005D34D /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				896DAE241F1802380005D34D /* MessageCompactViewController.swift */,
 				896DAE131F1801770005D34D /* MessagesViewController.swift */,
 				896DAE151F1801770005D34D /* MainInterface.storyboard */,
 				896DAE181F1801770005D34D /* Assets.xcassets */,
 				896DAE1A1F1801770005D34D /* Info.plist */,
-				896DAE241F1802380005D34D /* MessageCompactViewController.swift */,
 				896DAE261F1802660005D34D /* CreateMessageViewController.swift */,
 			);
 			path = MessagesExtension;
